@@ -14,11 +14,7 @@ export class VehiculoService {
 
   private http = inject(HttpClient);
 
-  getBooks(): Observable<Vehiculo[]> {
-    return this.http.get<Vehiculo[]>(this.apiUrl);
-  }
-
-  getBookDetails(): Observable<Vehiculo[]> {
+  getVehiculos(): Observable<Vehiculo[]> {
     return this.http.get<Vehiculo[]>(this.apiUrl);
   }
 
